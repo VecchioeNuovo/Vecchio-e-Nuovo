@@ -1,0 +1,2 @@
+apro terminale -> python -m http.server 8000
+apro internet -> http://localhost:8000

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Titolo e descrizione che appaiono su Google -->
+  <title>Vecchio & Nuovo — Antiquariato e modernariato</title>
+  <meta name="description" content="Selezione curata di mobilia, oggetti d'arte, antiquariato e modernariato. Visita il nostro negozio a Massa Carrara o scopri il catalogo online.">
+
+  <!-- Open Graph: come appare quando condividi su Facebook/WhatsApp -->
+  <meta property="og:title" content="Vecchio & Nuovo">
+  <meta property="og:description" content="Antiquariato e modernariato — Massa Carrara">
+  <meta property="og:type" content="website">
+
+  <!-- Stile -->
+  <link rel="stylesheet" href="css/stile.css">
+
+  <!-- Favicon: puoi sostituire con un'icona reale -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+</head>
+
+<body>
+
+  <!-- ==============================
+       NAVIGAZIONE
+  ============================== -->
+  <nav class="nav" aria-label="Navigazione principale">
+    <a href="#" class="nav-logo" aria-label="Vecchio & Nuovo — torna in cima">
+      <img src="img/logo_navbar.png" alt="Vecchio & Nuovo" class="nav-logo-img">
+    </a>
+
+    <!-- Menu hamburger (solo mobile) -->
+    <button class="nav-toggle" id="nav-toggle" aria-label="Apri menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="#catalogo">Catalogo</a></li>
+      <li><a href="#contatti">Dove siamo</a></li>
+      <li><a href="#mercati">Mercati</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- ==============================
+       HERO
+  ============================== -->
+  <header class="hero">
+    <p class="hero-eyebrow">Antiquariato &amp; Modernariato</p>
+    <h1>Ogni pezzo racconta<br>una <em>storia</em></h1>
+    <p>
+      Selezione curata di mobilia, oggetti d'arte, antiquariato e modernariato, trovata e restaurata con passione.
+      Visita il negozio a Carrara, oppure esplora il catalogo e contattaci per quello che ti interessa.
+    </p>
+    <a href="#catalogo" class="btn btn-dark">Esplora il catalogo</a>
+  </header>
+
+  <div class="divider"></div>
+
+
+  <!-- ==============================
+       CATALOGO
+  ============================== -->
+  <main>
+    <section class="section" id="catalogo" aria-labelledby="titolo-catalogo">
+      <div class="section-header">
+        <p class="section-label">Catalogo</p>
+        <h2 class="section-title" id="titolo-catalogo">Pezzi disponibili</h2>
+      </div>
+
+      <!-- Filtri per categoria -->
+      <div class="filtri" id="filtri" role="group" aria-label="Filtra per categoria">
+        <button class="filtro-btn attivo" data-cat="tutti">Tutti</button>
+        <button class="filtro-btn" data-cat="mobili">Mobili</button>
+        <button class="filtro-btn" data-cat="oggettistica">Oggettistica</button>
+        <button class="filtro-btn" data-cat="quadri">Quadri &amp; Arte</button>
+        <button class="filtro-btn" data-cat="ceramiche">Ceramiche</button>
+      </div>
+
+      <!-- Griglia prodotti (popolata da JS) -->
+      <div class="griglia" id="griglia" aria-live="polite">
+        <p class="stato-vuoto">Caricamento catalogo...</p>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ==============================
+       BARRA CTA CONTATTO
+  ============================== -->
+  <div class="cta-bar">
+    <p>"Hai visto qualcosa che ti interessa?"</p>
+    <div class="cta-buttons">
+      <a class="btn btn-whatsapp" id="cta-btn-wa" href="#" target="_blank" rel="noopener">
+        WhatsApp
+      </a>
+      <a class="btn btn-outline" id="cta-btn-email" href="#">
+        Manda una email
+      </a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+
+  <!-- ==============================
+       CONTATTI
+  ============================== -->
+  <section class="section" id="contatti" aria-labelledby="titolo-contatti">
+    <div class="section-header">
+      <p class="section-label">Dove siamo</p>
+      <h2 class="section-title" id="titolo-contatti">Vieni a trovarci</h2>
+    </div>
+
+    <div class="contatti-grid">
+      <div>
+        <div class="contatto-voce">
+          <p class="contatto-label">Indirizzo</p>
+          <p class="contatto-valore" id="info-indirizzo"></p>
+        </div>
+        <div class="contatto-voce">
+          <p class="contatto-label">Orari</p>
+          <p class="contatto-valore" id="info-orari"></p>
+        </div>
+      </div>
+
+      <div>
+        <div class="contatto-voce">
+          <p class="contatto-label">Telefono</p>
+          <p class="contatto-valore" id="info-telefono"></p>
+        </div>
+        <div class="contatto-voce">
+          <p class="contatto-label">Email</p>
+          <p class="contatto-valore" id="info-email"></p>
+        </div>
+        <div class="contatto-voce">
+          <p class="contatto-label">Facebook</p>
+          <p class="contatto-valore" id="info-facebook"></p>
+        </div>
+        <div class="contatto-voce" id="mercati">
+          <p class="contatto-label">Mercati</p>
+          <p class="contatto-valore" id="info-mercati"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==============================
+       FOOTER
+  ============================== -->
+  <footer class="footer">
+    <span id="footer-nome">© 2025 Vecchio & Nuovo</span>
+    <span>Carrara — Toscana</span>
+  </footer>
+
+
+  <!-- ==============================
+       MODAL SCHEDA PRODOTTO
+  ============================== -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-nome">
+    <div class="modal">
+      <div class="modal-img" id="modal-img">
+        <!-- immagine caricata da JS -->
+      </div>
+      <div class="modal-body">
+        <p class="modal-tag" id="modal-tag"></p>
+        <h3 class="modal-nome" id="modal-nome"></h3>
+        <p class="modal-meta" id="modal-meta"></p>
+        <p class="modal-desc" id="modal-desc"></p>
+        <p class="modal-prezzo" id="modal-prezzo"></p>
+        <div style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-top:0.5rem;">
+          <a class="btn btn-whatsapp" id="modal-btn-wa" href="#" target="_blank" rel="noopener">
+            WhatsApp
+          </a>
+          <a class="btn btn-outline" id="modal-btn-email" href="#">
+            Email
+          </a>
+        </div>
+      </div>
+      <button class="modal-chiudi" id="modal-chiudi" aria-label="Chiudi scheda">✕</button>
+    </div>
+  </div>
+
+
+  <!-- Script principale -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

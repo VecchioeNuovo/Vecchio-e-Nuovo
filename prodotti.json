@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "nome": "Banco da falegname",
+    "categoria": "mobili",
+    "periodo": "",
+    "descrizione": "Banco da lavoro originale, perfettamente restaurato.",
+    "prezzo": "700",
+    "foto": [
+      "img/prodotti/mobile_bancoFal/1.jpg",
+      "img/prodotti/mobile_bancoFal/2.jpg"
+    ],
+    "disponibile": true
+  },
+  {
+    "id": 2,
+    "nome": "Frutta in ceramica",
+    "categoria": "ceramiche",
+    "periodo": "",
+    "descrizione": "Ceramiche decorative realizzate a mano rappresentanti varie frutte.",
+    "prezzo": "50",
+    "foto": [
+      "img/prodotti/ceramica_frutta/1.jpg",
+      "img/prodotti/ceramica_frutta/2.jpg",
+      "img/prodotti/ceramica_frutta/3.jpg"
+    ],
+    "disponibile": true
+  },
+  {
+    "id": 3,
+    "nome": "Personaggi Carosello",
+    "categoria": "ceramiche",
+    "periodo": "",
+    "descrizione": "Personaggi originali del Carosello realizzati in ceramica. Marca sul fondo.",
+    "prezzo": "30",
+    "foto": [
+      "img/prodotti/ceramica_carosello/1.jpg",
+      "img/prodotti/ceramica_carosello/2.jpg"
+    ],
+    "disponibile": true
+  }
+]
