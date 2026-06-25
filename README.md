@@ -1,4 +1,4 @@
-# Bottega Antico — Sito Web
+# Vecchio e Nuovo — Sito Web
 
 Sito vetrina/catalogo statico, pubblicabile **gratis** su GitHub Pages.
 
