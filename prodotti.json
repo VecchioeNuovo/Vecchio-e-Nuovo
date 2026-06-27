@@ -53,5 +53,33 @@
       "img/prodotti/vasca_pietra/4.jpg"
     ],
     "disponibile": true
+  },
+  {
+    "id": 5,
+    "nome": "Multimetro vintage",
+    "categoria": "oggettistica",
+    "periodo": "Prima metà '900",
+    "descrizione": "Volt-amperometro (o multimetro) analogico d'epoca, uno strumento portatile da laboratorio utilizzato per misurare le grandezze elettriche",
+    "prezzo": "50",
+    "foto": [
+      "img/prodotti/multimetro_vintage/1.jpg",
+      "img/prodotti/multimetro_vintage/2.jpg",
+      "img/prodotti/multimetro_vintage/3.jpg",
+    ],
+    "disponibile": true
+  },
+  {
+    "id": 6,
+    "nome": "Torchietto per bottoni",
+    "categoria": "oggettistica",
+    "periodo": "",
+    "descrizione": "Torchietto per bottoni manuale a pressione, marca CDM",
+    "prezzo": "80",
+    "foto": [
+      "img/prodotti/torchietto_bottoni/1.jpg",
+      "img/prodotti/torchietto_bottoni/2.jpg",
+      "img/prodotti/torchietto_bottoni/3.jpg",
+    ],
+    "disponibile": true
   }
 ]
