@@ -39,4 +39,19 @@
     ],
     "disponibile": true
   }
+  {
+    "id": 4,
+    "nome": "Vasca in pietra",
+    "categoria": "mobili",
+    "periodo": "800",
+    "descrizione": "Vasca in pietra scolpita a mano. Molto bella come arredo da esterno.",
+    "prezzo": "250",
+    "foto": [
+      "img/prodotti/vasca_pietra/1.jpg",
+      "img/prodotti/vasca_pietra/2.jpg",
+      "img/prodotti/vasca_pietra/3.jpg",
+      "img/prodotti/vasca_pietra/4.jpg"
+    ],
+    "disponibile": true
+  },
 ]
