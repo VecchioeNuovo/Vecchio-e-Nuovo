@@ -38,7 +38,7 @@
       "img/prodotti/ceramica_carosello/2.jpg"
     ],
     "disponibile": true
-  }
+  },
   {
     "id": 4,
     "nome": "Vasca in pietra",
@@ -53,5 +53,5 @@
       "img/prodotti/vasca_pietra/4.jpg"
     ],
     "disponibile": true
-  },
+  }
 ]
