@@ -43,7 +43,7 @@
     "id": 4,
     "nome": "Vasca in pietra",
     "categoria": "mobili",
-    "periodo": "800",
+    "periodo": "'800",
     "descrizione": "Vasca in pietra scolpita a mano. Molto bella come arredo da esterno.",
     "prezzo": "250",
     "foto": [
