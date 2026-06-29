@@ -5,7 +5,7 @@
 /* === CONFIGURAZIONE ===
    Modifica questi valori con i dati reali */
 const CONFIG = {
-  nomeNegozio:   "Vecchio & Nuovo",
+  nomeNegozio:   "Vecchio & Nuovo Casa D'Aste",
   telefono:      "+39 348 55 02 680",        // ← metti il vero numero
   whatsapp:      "393271007446",             // ← numero senza + e senza spazi
   email:         "francescavatteroni@yahoo.it",   // ← vera email
@@ -21,6 +21,7 @@ const ICONE = {
   oggettistica:  "🕰️",
   ceramiche:     "🏺",
   quadri:        "🖼️",
+  arredi:        "🛋️",
 };
 
 /* === STATO APPLICAZIONE === */
