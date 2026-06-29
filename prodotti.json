@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 10,
     "nome": "Banco da falegname",
     "categoria": "mobili",
     "periodo": "",
@@ -13,34 +13,7 @@
     "disponibile": true
   },
   {
-    "id": 2,
-    "nome": "Frutta in ceramica",
-    "categoria": "ceramiche",
-    "periodo": "",
-    "descrizione": "Ceramiche decorative realizzate a mano rappresentanti varie frutte.",
-    "prezzo": "50",
-    "foto": [
-      "img/prodotti/ceramica_frutta/1.jpg",
-      "img/prodotti/ceramica_frutta/2.jpg",
-      "img/prodotti/ceramica_frutta/3.jpg"
-    ],
-    "disponibile": true
-  },
-  {
-    "id": 3,
-    "nome": "Personaggi Carosello",
-    "categoria": "ceramiche",
-    "periodo": "",
-    "descrizione": "Personaggi originali del Carosello realizzati in ceramica. Marca sul fondo.",
-    "prezzo": "30",
-    "foto": [
-      "img/prodotti/ceramica_carosello/1.jpg",
-      "img/prodotti/ceramica_carosello/2.jpg"
-    ],
-    "disponibile": true
-  },
-  {
-    "id": 4,
+    "id": 1,
     "nome": "Vasca in pietra",
     "categoria": "mobili",
     "periodo": "'800",
@@ -55,7 +28,7 @@
     "disponibile": true
   },
   {
-    "id": 5,
+    "id": 2,
     "nome": "Multimetro vintage",
     "categoria": "oggettistica",
     "periodo": "Prima metà '900",
@@ -69,7 +42,7 @@
     "disponibile": true
   },
   {
-    "id": 6,
+    "id": 3,
     "nome": "Torchietto per bottoni",
     "categoria": "oggettistica",
     "periodo": "",
