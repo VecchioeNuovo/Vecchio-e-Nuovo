@@ -24,7 +24,7 @@ collections:
             fields:
               - { label: "ID Unico (Numero progressivo)", name: "id", widget: "number", value_type: "int" }
               - { label: "Nome Prodotto", name: "nome", widget: "string" }
-              - { label: "Categoria", name: "categoria", widget: "select", options: ["mobili", "ceramiche", "oggettistica", "quadri"] }
+              - { label: "Categoria", name: "categoria", widget: "select", options: ["mobili", "ceramiche", "oggettistica", "quadri & arte"] }
               - { label: "Periodo / Epoca", name: "periodo", widget: "string", required: false }
               - { label: "Descrizione", name: "descrizione", widget: "text" }
               - { label: "Prezzo (€)", name: "prezzo", widget: "string" }
