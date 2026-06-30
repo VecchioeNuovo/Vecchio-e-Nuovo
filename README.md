@@ -1,12 +1,20 @@
-# Vecchio e Nuovo — Sito Web
+# Vecchio e Nuovo
 
-Sito vetrina/catalogo statico, pubblicabile **gratis** su GitHub Pages.
+Sito ufficiale del negozio di antiquariato e modernariato **Vecchio e Nuovo**, a Carrara.
+
+Catalogo prodotti, informazioni di contatto e dettagli sui mercati settimanali dove trovarci.
+
+🔗 **Sito online:** https://vecchioenuovo.github.io/Vecchio-e-Nuovo/
 
 ---
 
-## Struttura dei file
+## Note tecniche (per la gestione del sito)
+
+Sito statico (HTML/CSS/JS), nessun backend necessario.
+
+### Struttura dei file
 ```
-bottega-antico/
+Vecchio-e-Nuovo/
 ├── index.html          ← la pagina principale
 ├── prodotti.json       ← il catalogo (modificalo per aggiungere/rimuovere prodotti)
 ├── css/
@@ -14,13 +22,9 @@ bottega-antico/
 ├── js/
 │   └── main.js         ← logica interattiva (filtri, modal, WhatsApp)
 └── img/
-    ├── logo.png       
-    └── prodotti/       ← metti qui le foto dei prodotti
-        ├── prodotto1/
-        │   ├── 1.jpg
-        │   ├── 2.jpg
-        │   └── 2.jpg
-        ├── prodotto1/
+    ├── logo_navbar.png
+    └── prodotti/        ← foto dei prodotti, una sottocartella per pezzo
+        ├── nome-prodotto-1/
         │   ├── 1.jpg
         │   └── 2.jpg
         └── ...
@@ -29,102 +33,50 @@ bottega-antico/
 ---
 
 ## Come aggiungere un prodotto
+
 Apri `prodotti.json` e aggiungi un oggetto alla lista:
 
 ```json
 {
   "id": 10,
   "nome": "Nome del pezzo",
-  "categoria": "mobili",        ← mobili / oggettistica / ceramiche / quadri
+  "categoria": "mobili",
   "periodo": "XIX sec.",
   "descrizione": "Descrizione dettagliata del pezzo.",
-  "prezzo": "850",              ← solo il numero, senza €. Scrivi null per "Su richiesta"
-  "foto": "img/prodotti/nome-file.jpg",
-  "disponibile": true           ← metti false per nasconderlo dal catalogo
+  "prezzo": "850",
+  "foto": [
+    "img/prodotti/nome-prodotto/1.jpg",
+    "img/prodotti/nome-prodotto/2.jpg"
+  ],
+  "disponibile": true
 }
 ```
 
-Per la foto: metti il file JPG nella cartella `img/prodotti/` e scrivi il percorso nel campo `foto`.
+Categorie disponibili: `mobili`, `oggettistica`, `ceramiche`, `quadri`.
+Per "Su richiesta" invece del prezzo, scrivi `null`.
 
 ---
 
 ## Come cambiare i dati del negozio
-Apri `js/main.js` e modifica la sezione CONFIG in cima al file:
 
-```javascript
-const CONFIG = {
-  nomeNegozio:   "Il vero nome del negozio",
-  telefono:      "+39 123 456 7890",
-  whatsapp:      "39123456789",   ← numero senza + e senza spazi
-  email:         "vera@email.it",
-  facebook:      "https://facebook.com/pagina-reale",
-  indirizzo:     "Via Vera 1, Massa Carrara",
-  orari:         "Lun–Sab 9:00–19:00",
-  mercati:       "Ogni domenica in Piazza Aranci",
-};
-```
+Apri `js/main.js` e modifica il blocco `CONFIG` in cima al file — telefono, WhatsApp, email, indirizzo, orari, mercati. Da lì si aggiorna tutto il sito automaticamente.
 
 ---
 
-## Come pubblicare su GitHub Pages (gratis)
+## Come pubblicare una modifica
 
-### 1. Crea un account GitHub
-Vai su https://github.com e registrati (è gratuito).
-
-### 2. Crea un repository
-- Clicca il `+` in alto a destra → "New repository"
-- Nome repository: `bottega-antico` (o quello che vuoi)
-- Spunta "Public"
-- Clicca "Create repository"
-
-### 3. Carica i file
-Nel tuo nuovo repository:
-- Clicca "uploading an existing file"
-- Trascina TUTTI i file e cartelle del progetto
-- Clicca "Commit changes"
-
-> ⚠️ Importante: mantieni la struttura delle cartelle (css/, js/, img/)
-
-### 4. Attiva GitHub Pages
-- Vai in "Settings" (il tasto in alto nel repository)
-- Sezione "Pages" nel menu a sinistra
-- Source: seleziona "main" branch e cartella "/ (root)"
-- Clicca "Save"
-
-### 5. Il sito è online!
-Dopo 1-2 minuti il sito sarà raggiungibile all'indirizzo:
-```
-https://tuo-username.github.io/bottega-antico/
-```
-
----
-
-## Come aggiornare il sito dopo la pubblicazione
-
-Per aggiornare (ad esempio aggiungendo prodotti):
-1. Modifica il file in locale
-2. Vai su GitHub, apri il file
+1. Modifica il file che ti serve
+2. Su GitHub, apri quel file nel repository
 3. Clicca l'icona matita (modifica)
 4. Incolla le modifiche
 5. "Commit changes" → il sito si aggiorna in pochi secondi
-
-Oppure scarica GitHub Desktop per gestire i file dal computer come una cartella normale.
-
----
-
-## Dominio personalizzato (opzionale, ~10€/anno)
-
-Se vuoi un indirizzo tipo `www.bottegaantico.it` invece di `.github.io`:
-1. Compra il dominio su Aruba o Register.it (~10€/anno)
-2. In GitHub Pages → Custom domain, inserisci il dominio
-3. Nelle impostazioni DNS del dominio, aggiungi un record CNAME che punta a `tuo-username.github.io`
 
 ---
 
 ## Problemi comuni
 
-**Le foto non appaiono**: controlla che il nome file in `prodotti.json` corrisponda esattamente al file in `img/prodotti/` (maiuscole e minuscole contano).
+**Le foto non appaiono**: controlla che il nome file nel JSON corrisponda esattamente al file nella cartella (maiuscole/minuscole contano).
 
-**I prodotti non si caricano in locale**: apri il sito con un server locale invece di fare doppio clic su index.html. Con Python: `python -m http.server 8000` nella cartella del progetto, poi apri `http://localhost:8000`.
+**Le modifiche non si vedono**: prova a ricaricare la pagina forzando lo svuotamento della cache (Ctrl+Shift+R su Windows, Cmd+Shift+R su Mac).
 
-**Il WhatsApp non funziona**: controlla che il numero in `js/main.js` sia scritto senza + e senza spazi (es. `393471234567`).
+**Il WhatsApp non funziona**: controlla che il numero in `CONFIG` sia scritto senza + e senza spazi.
