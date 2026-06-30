@@ -1,1 +1,36 @@
+backend:
+  name: github
+  repo: vecchioenuovo/vecchioenuovo.github.io # Sostituisci con "tuo-username/nome-repo" se diverso
+  branch: main # Cambia in master se il tuo branch principale si chiama così
 
+media_folder: "img/prodotti"
+public_folder: "img/prodotti"
+
+collections:
+  - name: "catalogo"
+    label: "Catalogo Prodotti"
+    delete: true
+    # Configurazione specifica per file JSON singolo che contiene una lista
+    files:
+      - name: "prodotti"
+        label: "Tutti i Prodotti"
+        file: "prodotti.json"
+        fields:
+          - label: "Lista Prodotti"
+            name: "prodotti"
+            widget: "list"
+            allow_add: true
+            summary: '{{fields.nome}} ({{fields.prezzo}}€)'
+            fields:
+              - { label: "ID Unico (Numero progressivo)", name: "id", widget: "number", value_type: "int" }
+              - { label: "Nome Prodotto", name: "nome", widget: "string" }
+              - { label: "Categoria", name: "categoria", widget: "select", options: ["mobili", "ceramiche", "oggettistica", "quadri"] }
+              - { label: "Periodo / Epoca", name: "periodo", widget: "string", required: false }
+              - { label: "Descrizione", name: "descrizione", widget: "text" }
+              - { label: "Prezzo (€)", name: "prezzo", widget: "string" }
+              - label: "Foto del Prodotto"
+                name: "foto"
+                widget: "list"
+                summary: '{{fields.media}}'
+                field: { label: "Immagine", name: "media", widget: "image" }
+              - { label: "Disponibile", name: "disponibile", widget: "boolean", default: true }
