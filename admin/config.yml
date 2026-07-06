@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: vecchioenuovo/Vecchio-e-Nuovo
   branch: main # Cambia in master se il tuo branch principale si chiama così
   site_domain: vecchioenuovo.netlify.app
