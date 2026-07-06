@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: vecchioenuovo/vecchioenuovo.github.io # Sostituisci con "tuo-username/nome-repo" se diverso
+  repo: vecchioenuovo/Vecchio-e-Nuovo # Sostituisci con "tuo-username/nome-repo" se diverso
   branch: main # Cambia in master se il tuo branch principale si chiama così
 
 media_folder: "img/prodotti"
