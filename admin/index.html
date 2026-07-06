@@ -5,16 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex" />
   <title>Pannello di Controllo - Vecchio & Nuovo</title>
+
   <link rel="netlify-identity-widget" href="https://vecchioenuovo.netlify.app" />
+  
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
+
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  
   <script>
-    if (window.identityWidget) {
-      window.identityWidget.on("init", user => {
+    // Forza il widget a puntare al server di Netlify prima di avviarsi
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.init({
+        APIUrl: "https://vecchioenuovo.netlify.app/.netlify/identity"
+      });
+
+      window.netlifyIdentity.on("init", user => {
         if (!user) {
-          window.identityWidget.on("login", () => {
+          window.netlifyIdentity.on("login", () => {
             document.location.href = "/Vecchio-e-Nuovo/admin/";
           });
         }
