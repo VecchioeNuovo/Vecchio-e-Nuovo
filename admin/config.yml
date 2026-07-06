@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: vecchioenuovo/Vecchio-e-Nuovo
-  branch: main # Cambia in master se il tuo branch principale si chiama così
+  branch: main
 
 media_folder: "img/prodotti"
 public_folder: "img/prodotti"
@@ -10,7 +10,6 @@ collections:
   - name: "catalogo"
     label: "Catalogo Prodotti"
     delete: true
-    # Configurazione specifica per file JSON singolo che contiene una lista
     files:
       - name: "prodotti"
         label: "Tutti i Prodotti"
