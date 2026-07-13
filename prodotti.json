@@ -25,7 +25,7 @@
       "img/prodotti/vasca_pietra/3.jpg",
       "img/prodotti/vasca_pietra/4.jpg"
     ],
-    "disponibile": true
+    "disponibile": false
   },
   {
     "id": 2,
@@ -52,6 +52,35 @@
       "img/prodotti/torchietto_bottoni/1.jpg",
       "img/prodotti/torchietto_bottoni/2.jpg",
       "img/prodotti/torchietto_bottoni/3.jpg"
+    ],
+    "disponibile": true
+  },
+  {
+    "id": 4,
+    "nome": "Divano in pelle",
+    "categoria": "mobili",
+    "periodo": "",
+    "descrizione": "Divano in pelle color verde scuro componibile. Usato ma in ottime condizioni",
+    "prezzo": "180",
+    "foto": [
+      "img/prodotti/divano/1.jpeg",
+      "img/prodotti/divano/2.jpeg",
+      "img/prodotti/divano/3.jpeg"
+    ],
+    "disponibile": true
+  },
+  {
+    "id": 5,
+    "nome": "Poltroncina doppia seduta",
+    "categoria": "mobili",
+    "periodo": "",
+    "descrizione": "Poltroncina doppia seduta in pelle nera. Dimensioni HxLxP = 77x110x50",
+    "prezzo": "100",
+    "foto": [
+      "img/prodotti/poltroncina_doppia/1.jpeg",
+      "img/prodotti/poltroncina_doppia/2.jpeg",
+      "img/prodotti/poltroncina_doppia/3.jpeg",
+      "img/prodotti/poltroncina_doppia/4.jpeg"
     ],
     "disponibile": true
   }
