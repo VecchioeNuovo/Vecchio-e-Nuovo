@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  repo: vecchioenuovo/Vecchio-e-Nuovo
+  repo: VecchioeNuovo/Vecchio-e-Nuovo
   branch: main
 
 media_folder: "img/prodotti"
