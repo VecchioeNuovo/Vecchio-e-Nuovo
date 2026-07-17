@@ -83,5 +83,19 @@
       "img/prodotti/poltroncina_doppia/4.jpeg"
     ],
     "disponibile": true
+  },
+  {
+    "id": 11,
+    "nome": "Sculture frutta in marmo",
+    "categoria": "mobili",
+    "periodo": "",
+    "descrizione": "Sculture rappresentanti frutta in marmo, realizzata e dipinta a mano",
+    "prezzo": "10",
+    "foto": [
+      "img/prodotti/sculture-frutta-in-marmo/whatsapp_image_2026_07_17_at_15_25_51_2_.jpeg",
+      "img/prodotti/sculture-frutta-in-marmo/whatsapp_image_2026_07_17_at_15_25_51_1_.jpeg",
+      "img/prodotti/sculture-frutta-in-marmo/whatsapp_image_2026_07_17_at_15_25_51.jpeg"
+    ],
+    "disponibile": true
   }
 ]
